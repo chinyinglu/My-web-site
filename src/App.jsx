@@ -20,13 +20,13 @@ const MainContent = () => {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={
-            <div className="main-scroll w-full max-w-6xl mx-auto px-6 overflow-y-auto h-screen scroll-snap-y">
-              <Hero />
-              <Resume />
+      <div className="main-scroll w-full max-w-6xl mx-auto px-6 overflow-y-auto h-screen scroll-snap-y">
+        <Hero />
+        <Resume />
               <Skills />
-              <Portfolio />
-              <Contact />
-            </div>
+        <Portfolio />
+        <Contact />
+      </div>
           } />
           <Route path="/project/:id" element={<ProjectDetail />} />
         </Routes>

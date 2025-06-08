@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <motion.section
       id="hero"
-      className="w-full min-h-screen flex flex-col justify-center items-center text-center pt-12 pb-12 relative z-10 scroll-snap-start"
+      className="w-full min-h-screen flex flex-col justify-center items-center text-center pt-12 pb-12 relative z-10 scroll-snap-start px-2 lg:max-w-screen-lg lg:mx-auto"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.6 }}

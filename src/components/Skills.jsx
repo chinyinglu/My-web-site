@@ -52,13 +52,13 @@ const Skills = () => {
   return (
     <motion.section
       id="skills"
-      className="w-full min-h-screen flex flex-col justify-center items-center my-0 py-12 scroll-snap-start"
+      className="w-full min-h-screen flex flex-col justify-center items-center my-0 py-12 scroll-snap-start px-2 lg:max-w-screen-lg lg:mx-auto"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.6 }}
       transition={{ duration: 1.2 }}
     >
-      <div className="w-full max-w-3xl px-4">
+      <div className="w-full max-w-3xl px-2 sm:px-4 mx-auto">
         <motion.h2 
           className="text-2xl font-bold mb-8 text-stone-900 text-center"
           initial={{ opacity: 0, y: -20 }}

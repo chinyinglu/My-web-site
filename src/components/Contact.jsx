@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <motion.section
       id="contact"
-      className="w-full min-h-screen flex flex-col justify-center items-center scroll-snap-start"
+      className="w-full min-h-screen flex flex-col justify-center items-center scroll-snap-start px-2 lg:max-w-screen-lg lg:mx-auto"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.6 }}
@@ -16,7 +16,7 @@ const Contact = () => {
       <p className="text-stone-600 mb-8 text-center max-w-md">
         欢迎通过邮箱或社交平台与我取得联系。
       </p>
-      <div className="flex flex-col items-center gap-4 mb-8">
+      <div className="w-full max-w-2xl flex flex-col items-center gap-4 mb-8 px-2 sm:px-4 mx-auto">
         <a href="mailto:your@email.com" className="flex items-center gap-2 text-stone-700 hover:text-blue-600 transition text-lg">
           <Mail className="w-5 h-5" /> chinyinglu99@gmail.com
         </a>
