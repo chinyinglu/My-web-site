@@ -62,7 +62,7 @@ const Portfolio = () => {
               <div className="mt-auto flex gap-4 items-center">
                 <Link 
                   to={`/project/${proj.id}`} 
-                  className="text-blue-500 hover:text-blue-700 font-medium hover:underline"
+                  className="text-indigo-600 hover:text-indigo-800 text-sm hover:underline"
                 >
                   查看详情
                 </Link>
