@@ -1,22 +1,33 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const projects = [
   {
+    id: '1',
     title: '现代个人网站',
     description: '基于 Vite + React + TailwindCSS + shadcn/ui 的极简包豪斯风格个人主页。',
     tech: ['React', 'TailwindCSS', 'shadcn/ui'],
     link: '#',
   },
   {
-    title: 'UI 组件库',
-    description: '自研高可用 UI 组件库，支持主题切换与响应式设计。',
-    tech: ['TypeScript', 'Storybook', 'CSS-in-JS'],
+    id: '3',
+    title: '猫咪品种识别系统',
+    description: '基于深度学习的猫咪品种识别应用，能准确区分13种不同猫咪品种。',
+    tech: ['Python', 'PyTorch', 'Flask', 'PIL'],
     link: '#',
   },
   {
-    title: '数据可视化平台',
-    description: '企业级数据可视化大屏，支持多种图表与实时数据流。',
-    tech: ['React', 'D3.js', 'WebSocket'],
+    id: '4',
+    title: '医疗陪诊小程序',
+    description: '基于微信小程序原生框架的医疗服务应用，提供医院查询、医生预约、陪诊服务等功能。',
+    tech: ['微信小程序', 'WXML/WXSS', 'JavaScript'],
+    link: '#',
+  },
+  {
+    id: '5',
+    title: '昆明二手房数据可视化',
+    description: '从爬虫采集到数据分析与可视化的全流程项目，展现昆明二手房市场多维度分析。',
+    tech: ['Python', 'Pandas', 'Matplotlib', 'K-means'],
     link: '#',
   },
 ];
@@ -34,9 +45,11 @@ const Portfolio = () => {
       <h2 className="text-2xl font-bold text-stone-900 mb-8 text-center">个人作品</h2>
       <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full">
         {projects.map((proj, idx) => (
-          <div
+          <motion.div
             key={idx}
             className="bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
+            whileHover={{ scale: 1.03 }}
+            transition={{ type: 'spring', stiffness: 300 }}
           >
             <h3 className="text-xl font-semibold mb-2 text-stone-800 text-center">{proj.title}</h3>
             <p className="text-stone-600 mb-4 flex-1 text-center">{proj.description}</p>
@@ -45,8 +58,15 @@ const Portfolio = () => {
                 <span key={i} className="bg-stone-100 text-stone-700 px-2 py-1 rounded text-xs">{t}</span>
               ))}
             </div>
-            <a href={proj.link} className="mt-auto text-blue-600 hover:underline text-sm font-medium">查看项目</a>
-          </div>
+            <div className="mt-auto flex gap-4 items-center">
+              <Link 
+                to={`/project/${proj.id}`} 
+                className="text-stone-800 hover:text-stone-600 font-medium hover:underline"
+              >
+                查看详情
+              </Link>
+            </div>
+          </motion.div>
         ))}
       </div>
     </motion.section>

@@ -26,6 +26,7 @@ const Navbar = () => {
       <nav className="flex items-center gap-8 text-stone-700 font-medium text-sm">
         <a href="#hero" onClick={e => handleNavClick(e, 'hero')} className="hover:text-black transition">HI</a>
         <a href="#resume" onClick={e => handleNavClick(e, 'resume')} className="hover:text-black transition">PROFILE</a>
+        <a href="#skills" onClick={e => handleNavClick(e, 'skills')} className="hover:text-black transition">SKILLS</a>
         <a href="#portfolio" onClick={e => handleNavClick(e, 'portfolio')} className="hover:text-black transition">WORK</a>
         <a href="#contact" onClick={e => handleNavClick(e, 'contact')} className="hover:text-black transition">CONTACT</a>
       </nav>
