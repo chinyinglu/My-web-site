@@ -59,10 +59,10 @@ const Portfolio = () => {
                   <span key={i} className="bg-stone-100 text-stone-700 px-2 py-1 rounded text-xs">{t}</span>
                 ))}
               </div>
-              <div className="mt-auto flex gap-4 items-center">
+              <div className="mt-auto w-full flex justify-center">
                 <Link 
                   to={`/project/${proj.id}`} 
-                  className="text-stone-800 hover:text-stone-600 font-medium hover:underline"
+                  className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full text-center text-sm transition-colors duration-300"
                 >
                   查看详情
                 </Link>
