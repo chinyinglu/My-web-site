@@ -44,7 +44,7 @@ const Portfolio = () => {
     >
       <div className="w-full max-w-3xl px-2 sm:px-4 mx-auto mt-10 md:mt-0">
         <h2 className="text-2xl font-bold text-stone-900 mb-6 md:mb-8 text-center">个人作品</h2>
-        <div className="w-full grid gap-4 sm:gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
+        <div className="w-full grid gap-4 sm:gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 pb-20">
           {projects.map((proj, idx) => (
             <motion.div
               key={idx}

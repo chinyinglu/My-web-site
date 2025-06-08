@@ -255,7 +255,7 @@ html {
     box-sizing: border-box !important;
   }
   
-  #hero, #resume, #skills, #portfolio, #contact {
+  #hero, #resume, #skills, #contact {
     min-height: 100dvh !important;
     height: 100dvh !important;
     padding-top: 1rem !important;
@@ -263,6 +263,16 @@ html {
     display: flex !important;
     flex-direction: column !important;
     overflow: hidden !important;
+  }
+  
+  #portfolio {
+    min-height: 100dvh !important;
+    height: auto !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow-y: auto !important;
   }
   
   #hero {
