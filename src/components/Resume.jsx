@@ -32,22 +32,22 @@ const Resume = () => {
   return (
     <motion.section
       id="resume"
-      className="w-full min-h-screen flex flex-col justify-center items-center my-0 py-12 scroll-snap-start px-2 lg:max-w-screen-lg lg:mx-auto"
+      className="w-full min-h-screen flex flex-col justify-start md:justify-center items-center py-6 md:py-12 scroll-snap-start px-2 lg:max-w-screen-lg lg:mx-auto"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.6 }}
+      viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 1.2 }}
     >
-      <div className="w-full max-w-3xl px-2 sm:px-4 mx-auto">
-        <h2 className="text-2xl font-bold mb-8 text-stone-900 text-center">履历</h2>
+      <div className="w-full max-w-3xl px-2 sm:px-4 mx-auto mt-10 md:mt-0">
+        <h2 className="text-2xl font-bold mb-6 md:mb-8 text-stone-900 text-center">履历</h2>
         <ol className="relative border-l-2 border-black">
           {timeline.map((item, idx) => (
             <motion.li
               key={item.time}
-              className={`ml-6 relative mb-10 last:mb-0`}
+              className={`ml-6 relative mb-6 md:mb-10 last:mb-0`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.6 }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.6, delay: idx * 0.15 }}
             >
               <div className="absolute -left-8 w-4 h-4 rounded-full bg-stone-900 border-4 border-white"></div>

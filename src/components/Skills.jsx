@@ -52,44 +52,44 @@ const Skills = () => {
   return (
     <motion.section
       id="skills"
-      className="w-full min-h-screen flex flex-col justify-center items-center my-0 py-12 scroll-snap-start px-2 lg:max-w-screen-lg lg:mx-auto"
+      className="w-full min-h-screen flex flex-col justify-start md:justify-center items-center py-6 md:py-12 scroll-snap-start px-2 lg:max-w-screen-lg lg:mx-auto"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.6 }}
+      viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 1.2 }}
     >
-      <div className="w-full max-w-3xl px-2 sm:px-4 mx-auto">
+      <div className="w-full max-w-3xl px-2 sm:px-4 mx-auto mt-10 md:mt-0">
         <motion.h2 
-          className="text-2xl font-bold mb-8 text-stone-900 text-center"
+          className="text-2xl font-bold mb-6 md:mb-8 text-stone-900 text-center"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.7 }}
         >
           技能
         </motion.h2>
         
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-8"
+          className="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-6 mb-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.7 }}
         >
           {skills.map((skillGroup, idx) => (
             <motion.div 
               key={skillGroup.category}
-              className="bg-white p-6 rounded-xl shadow-sm border border-stone-200"
+              className="bg-white p-4 md:p-6 rounded-xl shadow-sm border border-stone-200"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.6 }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.7, delay: 0.1 }}
             >
               <motion.h3 
                 className="text-lg font-bold text-stone-800 mb-4"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.6 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
                 {skillGroup.category}
@@ -100,7 +100,7 @@ const Skills = () => {
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.6 }}
+                viewport={{ once: true, amount: 0.1 }}
               >
                 {skillGroup.items.map(skill => (
                   <motion.span 

@@ -226,6 +226,16 @@ html {
 .main-scroll {
   overflow-y: auto;
   height: 100vh;
+  height: 100dvh;
+}
+
+/* 隐藏滚动条但保留滚动功能 */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
 }
 
 /* 详情页样式 */
@@ -233,4 +243,26 @@ html {
   height: 100%;
   overflow-y: auto;
   padding-bottom: 60px;
+}
+
+/* 移动端响应式调整 */
+@media (max-width: 768px) {
+  section {
+    min-height: auto !important;
+    padding: 3rem 0 !important;
+  }
+  
+  #resume, #skills {
+    min-height: 100dvh !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
+  
+  .scroll-snap-start {
+    scroll-snap-align: start;
+    scroll-margin-top: 0;
+  }
 }
