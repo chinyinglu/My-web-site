@@ -619,7 +619,7 @@ const projectsData = [
     title: '现代个人网站',
     description: '基于 Vite + React + TailwindCSS + shadcn/ui 的极简包豪斯风格个人主页。',
     tech: ['React', 'TailwindCSS', 'shadcn/ui'],
-    link: '#',
+    link: 'https://github.com/chinyinglu/My-web-site/',
     fullDescription: '这是一个设计精美的现代个人网站，采用了包豪斯风格的设计理念，简约而不简单。整个网站使用了 React 作为前端框架，TailwindCSS 进行样式设计，以及 shadcn/ui 组件库来提升用户体验。网站具有响应式设计，可以在各种设备上完美展示。',
     features: [
       '响应式设计，适配移动端和桌面端',
@@ -668,7 +668,7 @@ const ButtonDemo = () => (
     title: '猫咪品种识别系统',
     description: '基于深度学习的猫咪品种识别应用，能准确区分13种不同猫咪品种。',
     tech: ['Python', 'PyTorch', 'Flask', 'PIL'],
-    link: 'https://github.com/yourusername/deepleaning_cat',
+    link: 'https://github.com/chinyinglu/cat-breed-classification',
     fullDescription: '这是一个基于深度学习的猫咪品种识别系统，使用PyTorch框架开发。该系统能够识别13种不同的猫咪品种，包括阿比西尼亚猫、孟加拉猫、伯曼猫、孟买猫、埃及猫、英国短毛猫、缅因猫、波斯猫、折耳猫、浣熊猫、俄罗斯蓝猫、暹罗猫和斯芬克斯猫。系统使用预训练的深度学习模型，通过图像处理流程（调整大小、标准化、转换为张量）实现高准确率的猫咪品种识别。该项目提供了一个基于Flask的Web应用程序，允许用户上传猫咪图片并获取品种预测结果。',
     features: [
       '识别13种常见猫咪品种的能力',
@@ -727,7 +727,7 @@ if __name__ == '__main__':
     title: '医疗陪诊小程序',
     description: '基于微信小程序原生框架的医疗服务应用，提供医院查询、医生预约、陪诊服务等功能。',
     tech: ['微信小程序', 'WXML/WXSS', 'JavaScript', '微信云开发'],
-    link: 'https://github.com/yourusername/medical-assistant-miniprogram',
+    link: 'https://github.com/chinyinglu/medical-escort-miniprogram',
     fullDescription: '医疗陪诊小程序是基于微信小程序原生框架开发的医疗服务应用，旨在为用户提供医院查询、医生预约、陪诊服务等功能。项目采用了模块化的开发方式，功能组件化，使用响应式设计适配不同的屏幕尺寸。小程序包含多个核心功能模块，包括首页、医院查询、预约管理和用户中心等，每个模块都有特定的技术实现方式和关键API调用。',
     features: [
       '医院查询与筛选功能，支持按距离、类型等多维度筛选',
@@ -745,7 +745,7 @@ if __name__ == '__main__':
     title: '昆明二手房数据可视化',
     description: '从爬虫采集到数据分析与可视化的全流程项目，展现昆明二手房市场多维度分析。',
     tech: ['Python', 'Pandas', 'Matplotlib', 'K-means'],
-    link: 'https://github.com/yourusername/kunming-housing-data-visualization',
+    link: 'https://github.com/chinyinglu/kunming-second-hand-house-data-visualization/tree/master',
     fullDescription: '本项目是一个完整的数据分析系统，专注于昆明二手房市场数据的采集、处理、分析和可视化。项目包含了从数据爬取、数据清洗、数据分析到数据可视化的全流程实现，旨在通过数据挖掘和可视化技术，深入了解昆明二手房市场的价格分布、区域特点和市场趋势。系统分为三个主要模块：数据爬虫程序负责从链家网站采集数据；数据分析程序对采集的数据进行清洗、处理和分析；可视化部分则通过多种图表直观展示分析结果。',
     features: [
       '完整的数据分析流程：从数据采集、清洗到分析、可视化的全流程实现',
