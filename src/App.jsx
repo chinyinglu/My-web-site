@@ -20,7 +20,7 @@ const MainContent = () => {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={
-      <div className="main-scroll w-full max-w-6xl mx-auto px-4 sm:px-6 overflow-y-auto h-auto md:h-screen">
+      <div className="main-scroll w-full max-w-6xl mx-auto px-4 sm:px-6 overflow-y-auto h-[100dvh] md:h-screen scroll-snap-y">
         <Hero />
         <Resume />
         <Skills />

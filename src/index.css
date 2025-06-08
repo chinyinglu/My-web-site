@@ -250,7 +250,7 @@ html {
 /* 移动端响应式调整 */
 @media (max-width: 768px) {
   section {
-    min-height: auto !important;
+    min-height: 100dvh !important;
     padding: 3rem 0 !important;
     box-sizing: border-box !important;
   }
@@ -278,8 +278,9 @@ html {
   }
   
   #portfolio {
-    min-height: auto !important;
+    min-height: 100dvh !important;
     height: auto !important;
+    min-height: 100dvh !important;
     padding-top: 1rem !important;
     padding-bottom: 5rem !important;
     display: flex !important;
@@ -294,14 +295,14 @@ html {
   }
   
   .scroll-snap-y {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
   }
   
   .main-scroll {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    overflow-y: scroll !important;
+    overflow-y: auto !important;
   }
 }
