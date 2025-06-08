@@ -266,10 +266,21 @@ html {
     overflow: hidden !important;
   }
   
-  #resume, #contact {
+  #resume {
     min-height: 100dvh !important;
     height: 100dvh !important;
     padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    overflow: hidden !important;
+  }
+  
+  #contact {
+    min-height: 100dvh !important;
+    height: 100dvh !important;
+    padding-top: 5rem !important;
     padding-bottom: 1rem !important;
     display: flex !important;
     flex-direction: column !important;
