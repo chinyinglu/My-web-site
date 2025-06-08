@@ -215,6 +215,7 @@ html {
 }
 .scroll-snap-y {
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 .scroll-snap-start {
   scroll-snap-align: start;
@@ -227,6 +228,7 @@ html {
   overflow-y: auto;
   height: 100vh;
   height: 100dvh;
+  scroll-padding-top: 0;
 }
 
 /* 隐藏滚动条但保留滚动功能 */
@@ -248,21 +250,42 @@ html {
 /* 移动端响应式调整 */
 @media (max-width: 768px) {
   section {
-    min-height: auto !important;
+    min-height: 100dvh !important;
     padding: 3rem 0 !important;
+    box-sizing: border-box !important;
   }
   
-  #resume, #skills {
+  #hero, #resume, #skills, #portfolio, #contact {
     min-height: 100dvh !important;
+    height: 100dvh !important;
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
     display: flex !important;
     flex-direction: column !important;
+    overflow: hidden !important;
+  }
+  
+  #hero {
+    justify-content: center !important;
+  }
+  
+  #resume, #skills, #portfolio, #contact {
     justify-content: flex-start !important;
   }
   
   .scroll-snap-start {
     scroll-snap-align: start;
     scroll-margin-top: 0;
+  }
+  
+  .scroll-snap-y {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .main-scroll {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
 }
